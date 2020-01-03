@@ -1,0 +1,13 @@
+name: 'Hello World'
+description: 'Greet someone and record the time'
+inputs:
+  issue_id_to_close:  # id of input
+    description: 'Which existing issue needs to close'
+    required: true
+outputs:
+  new_issue_url: 
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.issue_id_to_close }}
