@@ -13,4 +13,4 @@ jobs:
       # Also, the indenting here seems important. `with:` cannot have a hyphen preceeding it like `- with:`
       with:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
-        having-label: 'weekly_status_update'
+        having_label: 'weekly_status_update'
