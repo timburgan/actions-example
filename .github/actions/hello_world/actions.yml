@@ -1,0 +1,7 @@
+name: Hello World
+description: A "smoke test" to ensure workflow yml, Dockerfile and actions.yml are wired-up correctly
+inputs:
+  hello_message: 'default_hello_message'   # echo $INPUT_HELLO_MESSAGE
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
