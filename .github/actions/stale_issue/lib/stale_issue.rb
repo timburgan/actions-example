@@ -3,7 +3,7 @@
 puts ''
 puts ''
 puts '=========================='
-puts 'boomstakalaka'
+puts 'boomstakalaka.. I mean "hello world"'
 puts "having_label: #{ENV['INPUT_HAVING_LABEL']}"
 puts "days_old: #{ENV['INPUT_DAYS_OLD']}"
 puts ''
