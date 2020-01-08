@@ -1,0 +1,14 @@
+# name: Cyclic Issues
+# 
+# on:
+#   schedule: 
+#     - cron: '0 19 * * Sun'	# i.e. 5am every Monday, Brisbane time	
+# 
+# jobs:
+#   close_existing_issue:	
+#     runs-on: ubuntu-latest
+#     steps:
+#       - uses: my_actions/stale_issue
+#       - with:
+#           repo-token: ${{ secrets.GITHUB_TOKEN }}
+#           having-label: 'weekly_status_update'
