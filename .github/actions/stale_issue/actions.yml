@@ -1,8 +1,8 @@
 name: Close Stale Issue
 description: Close an open issue that's >= 7 days since CREATION DATE that has a given label.
-inputs:
-  having_label: 'weekly_status'
-  days_old: 7
+inputs:                             # These are created an environment variables once docker runs
+  having_label: 'weekly_status'     # echo $INPUT_HAVING_LABEL
+  days_old: 7                       # echo $INPUT_DAYS_OLD
 runs:
   using: 'docker'
   image: 'Dockerfile'
