@@ -4,8 +4,7 @@ puts ''
 puts ''
 puts '=========================='
 puts 'boomstakalaka.. I mean "hello world"'
-puts "having_label: #{ENV['INPUT_HAVING_LABEL']}"
-puts "days_old: #{ENV['INPUT_DAYS_OLD']}"
+puts "hello_message: #{ENV['INPUT_HELLO_MESSAGE']}"
 puts ''
 puts 'other env vars:'
 puts ''
