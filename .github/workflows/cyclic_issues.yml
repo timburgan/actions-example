@@ -8,7 +8,12 @@ jobs:
   close_existing_issue:	
     runs-on: ubuntu-latest
     steps:
-    - uses: timburgan/actions-trial/.github/actions/stale_issue
+    - uses: timburgan/actions-trial/.github/actions/stale_issue@master
+    # Your workflow file was invalid: The pipeline is not valid. 
+    # .github/workflows/cyclic_issues.yml (Line: 11, Col: 13): 
+    # Expected format {org}/{repo}[/path]@ref. 
+    # Actual 'timburgan/actions-trial/.github/actions/stale_issue'
+    # Input string was not in a correct format.
       with:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
         having-label: 'weekly_status_update'
