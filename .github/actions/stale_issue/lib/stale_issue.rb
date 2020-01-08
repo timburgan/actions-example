@@ -20,3 +20,8 @@ puts '=========================='
 
 # ... and to use that, we'll need to add new input variables
 #     via USERNAME/PAT don't we?
+#
+# OR
+#
+# ... is this what the `repo-token: {{secrets.GITHUB_TOKEN}}` then available 
+#     in docker via `INPUT_REPO-TOKEN` envrionmentvariable is for?
