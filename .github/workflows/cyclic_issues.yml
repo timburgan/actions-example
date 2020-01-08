@@ -8,7 +8,7 @@ jobs:
   close_existing_issue:	
     runs-on: ubuntu-latest
     steps:
-    - uses: .github/actions/stale_issue
+    - uses: timburgan/actions-trial/.github/actions/stale_issue
       with:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
         having-label: 'weekly_status_update'
