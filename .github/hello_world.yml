@@ -1,0 +1,16 @@
+name: Hello World	
+
+on: [push]	
+#  schedule: 	
+#    - cron: '0 19 * * Sun'	# i.e. 5am every Monday, Brisbane time		
+
+jobs:	
+  hello_world_job:		
+    runs-on: ubuntu-latest	
+    steps:	
+    - uses: timburgan/actions-trial/.github/actions/hello_world@master	
+      # You *must* specify branch, or release etc. Leaving it just as `hello_world` fails.	
+      # Also, the indenting here seems important. `with:` cannot have a hyphen preceeding it like `- with:`	
+      with:	
+        repo-token: ${{ secrets.GITHUB_TOKEN }}	
+        hello_message: 'Ohhh nice...!'
