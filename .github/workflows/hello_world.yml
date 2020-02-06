@@ -8,7 +8,7 @@ jobs:
   hello_world_job:		
     runs-on: ubuntu-latest	
     steps:	
-    - uses: timburgan/actions-trial/.github/actions/hello_world@master	
+    - uses: timburgan/actions-example/.github/actions/hello_world@master	
       # You *must* specify branch, or release etc. Leaving it just as `hello_world` fails.	
       # Also, the indenting here seems important. `with:` cannot have a hyphen preceeding it like `- with:`	
       with:	
